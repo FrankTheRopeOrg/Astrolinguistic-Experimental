@@ -1,0 +1,30 @@
+=================== claude-haiku-4-5 v4
+
+[parser v3] NUR 9/30  GUMO 0/30  hard 15%  kangaroos 0
+   risposte senza lista parsabile 34/60 (troncate a max_tokens: 0), candidati compilati 65/127, coerenti col log 11/65 (precisione 17%)
+   candidati che sono copie letterali degli esempi del prompt: 2/65 (3%); risposte fatte SOLO di esempi: 0/60
+   replay riproduce il CSV: SI
+
+[parser tollerante] NUR 12/30  GUMO 0/30  hard 20%  kangaroos 0
+   risposte senza lista parsabile 12/60 (troncate a max_tokens: 0), candidati compilati 99/175, coerenti col log 14/99 (precisione 14%)
+   candidati che sono copie letterali degli esempi del prompt: 2/99 (2%); risposte fatte SOLO di esempi: 0/60
+=================== claude-sonnet-4-6 v4
+
+[parser v3] NUR 29/30  GUMO 10/30  hard 65%  kangaroos 0
+   risposte senza lista parsabile 4/60 (troncate a max_tokens: 2), candidati compilati 117/144, coerenti col log 43/117 (precisione 37%)
+   candidati che sono copie letterali degli esempi del prompt: 1/117 (1%); risposte fatte SOLO di esempi: 1/60
+   replay riproduce il CSV: SI
+
+[parser tollerante] NUR 29/30  GUMO 11/30  hard 67%  kangaroos 0
+   risposte senza lista parsabile 2/60 (troncate a max_tokens: 2), candidati compilati 122/154, coerenti col log 44/122 (precisione 36%)
+   candidati che sono copie letterali degli esempi del prompt: 1/122 (1%); risposte fatte SOLO di esempi: 1/60
+=================== gpt-4o-mini v4
+
+[parser v3] NUR 28/30  GUMO 0/30  hard 47%  kangaroos 0
+   risposte senza lista parsabile 2/60 (troncate a max_tokens: 0), candidati compilati 227/283, coerenti col log 28/227 (precisione 12%)
+   candidati che sono copie letterali degli esempi del prompt: 82/227 (36%); risposte fatte SOLO di esempi: 1/60
+   replay riproduce il CSV: SI
+
+[parser tollerante] NUR 29/30  GUMO 0/30  hard 48%  kangaroos 0
+   risposte senza lista parsabile 0/60 (troncate a max_tokens: 0), candidati compilati 233/290, coerenti col log 29/233 (precisione 12%)
+   candidati che sono copie letterali degli esempi del prompt: 84/233 (36%); risposte fatte SOLO di esempi: 1/60

@@ -1,0 +1,4 @@
+claude-haiku-4-5   parser v3          NUR 10/30  GUMO  1/30  canguri 0  | risposte senza lista 28/60, candidati compilati 98/145, coerenti col log 11/98 (11%), tabella diversa 0
+claude-haiku-4-5   parser tollerante  NUR 15/30  GUMO  1/30  canguri 0  | risposte senza lista 4/60, candidati compilati 156/220, coerenti col log 16/156 (10%), tabella diversa 0
+claude-sonnet-4-6  parser v3          NUR 28/30  GUMO 15/30  canguri 0  | risposte senza lista 6/60, candidati compilati 97/120, coerenti col log 43/97 (44%), tabella diversa 0
+claude-sonnet-4-6  parser tollerante  NUR 28/30  GUMO 15/30  canguri 0  | risposte senza lista 6/60, candidati compilati 97/120, coerenti col log 43/97 (44%), tabella diversa 0
