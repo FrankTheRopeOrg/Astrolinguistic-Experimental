@@ -1,20 +1,38 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20825952.svg)](https://doi.org/10.5281/zenodo.20825952)
 
-# Experimental Astrolinguistics — Level A: code, results, and logs
+# Intercepting the Kangaroo — code, results, and logs
 
-Replication archive for the anti-kangaroo protocol (Level A): grounding unknown
-word meanings through ostension, minimal pairs, and pre-registered predictive
-probes in a synthetic micro-world. This archive accompanies the paper and is the
-frozen snapshot referenced by its results.
+Replication archive for the anti-kangaroo protocol: reconstructing the meanings
+of the words of an unknown lexicon through ostension, minimal pairs, and
+pre-registered predictive probes in a synthetic micro-world with complete ground
+truth. Each release is the frozen snapshot referenced by one version of the
+paper.
 
-Authors: Cordella & Cappelli.
+Authors: Francesco Cordella and Mauro Cappelli (ENEA, Centro Ricerche di Frascati).
+
+## Versions
+
+| Release | Folders | Paper | Protocol |
+|---------|---------|-------|----------|
+| v2.0 (October 2026) | `codice_v4/` | Revised manuscript: *Intercepting the Kangaroo: Verified Dictionary Reconstruction Across Mismatched Category Systems, with Language Models as Hypothesis Proposers* | v4 |
+| v1.0.1 (June 2026) | `code/`, `results/`, `logs/` | Preprint: *Intercepting the Kangaroo: Experimental Astrolinguistics with Constructed Lexicons, Active Probing, and Large Language Models as Informants and Hypothesis Proposers* ([10.5281/zenodo.20645777](https://doi.org/10.5281/zenodo.20645777)) | v3 |
+
+The revised manuscript is built on protocol **v4**, which applies the
+elimination step (Eq. 2) at every exchange to every anchor; the archived **v3**
+implementation applied it to all anchors only during ostension. Appendix C of the
+revised manuscript documents the change and gives the v3 numbers beside the new
+ones. To reproduce the revised tables and figures, start from
+[`codice_v4/README_v4.md`](codice_v4/README_v4.md). The preprint folders are kept
+unchanged, and the sections below describe them.
 
 ---
 
 ## Repository layout
 
 ```
-code/        the pipeline (7 scripts)
+codice_v4/   protocol v4 (revised manuscript): code, per-seed results, raw
+             responses of the new proposer runs; see codice_v4/README_v4.md
+code/        the pipeline (7 scripts) of the preprint (v3)
 results/     per-run metrics as CSV (the numbers behind the tables)
 logs/
   campagna/  full JSONL interaction logs, Level A campaign (per seed/condition)
@@ -23,7 +41,7 @@ logs/
   trappole/  JSONL log of the injected-trap study
 ```
 
-## Code
+## Code (preprint, v3)
 
 | File | Role |
 |------|------|
@@ -39,7 +57,7 @@ Only `anthropic` and `openai` are external dependencies, and only for the
 API-based (`--llm`) conditions. SIM mode, traps, and the noise study use the
 Python standard library only.
 
-## Reproducing the results
+## Reproducing the preprint results (v3)
 
 All commands are run from `code/`. SIM-mode runs are free and deterministic.
 
@@ -100,24 +118,24 @@ proposer) and `gpt-4o-mini` (L2 informant), both at temperature 0.
 
 If you use this code or data, please cite the paper and this archive.
 
-**Paper:** Cordella & Cappelli, *Experimental Astrolinguistics: [full title]*,
-[year]. arXiv:[arXiv ID].
+**Paper:** Cordella, F., & Cappelli, M. (2026). *Intercepting the Kangaroo:
+Verified Dictionary Reconstruction Across Mismatched Category Systems, with
+Language Models as Hypothesis Proposers* (revised manuscript). The earlier
+version (protocol v3) is available as a preprint:
+[10.5281/zenodo.20645777](https://doi.org/10.5281/zenodo.20645777).
 
-**Software/data archive:** Cordella & Cappelli, *Anti-kangaroo protocol —
-Level A: replication archive*, Zenodo, 2026.
+**Software/data archive:** Cordella, F., & Cappelli, M. (2026).
+*Astrolinguistic-Experimental: replication archive* [Software]. Zenodo.
 DOI: [10.5281/zenodo.20825952](https://doi.org/10.5281/zenodo.20825952)
 
-The DOI above is the Zenodo "concept" DOI, which always resolves to the latest
-version. Replace the arXiv ID placeholder above once the preprint is posted.
-
-Replace the bracketed placeholders once the arXiv ID and the Zenodo DOI are
-assigned. The Zenodo "concept DOI" (which always resolves to the latest version)
-is the preferred one to cite.
+The archive DOI above is the Zenodo "concept" DOI, which always resolves to the
+latest version and is the preferred one to cite.
 
 ## License
 
-Code (`code/`) is released under the MIT License (see `LICENSE`).
-Results and logs (`results/`, `logs/`) are released under CC-BY-4.0.
+Code (`code/` and the scripts in `codice_v4/`) is released under the MIT License
+(see `LICENSE`). Results and logs (`results/`, `logs/`, and the data files in
+`codice_v4/`) are released under CC-BY-4.0.
 
 ## Reproducibility note
 
